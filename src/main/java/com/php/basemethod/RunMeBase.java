@@ -5,13 +5,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.php.pages.HomePage;
 
 public class RunMeBase {
 	
 	WebDriver driver;
-	HomePage hPage;
-
 	
 	@BeforeTest
 	public void setUp(){
@@ -22,11 +19,9 @@ public class RunMeBase {
 		driver.get("http://the-internet.herokuapp.com/");
 	}
 	
-	
 	@Test
-	public void home_page(){
-		hPage = new HomePage(driver);
-		hPage.addRemoveClick();
-		System.out.println(driver.getTitle());
+	public void method1(){
+		System.out.println("This is executing method 1");
 	}
+	
 }
