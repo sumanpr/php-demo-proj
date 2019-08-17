@@ -17,6 +17,7 @@ public class RunMeBase {
 		
 		driver.manage().window().maximize();
 		driver.get("http://the-internet.herokuapp.com/");
+		System.out.println("browser launched");
 	}
 	
 	@Test
